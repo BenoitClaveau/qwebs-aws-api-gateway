@@ -1,6 +1,6 @@
 {
   "name": "qwebs-aws-api-gateway",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Qwebs routing for AWS API Gateway",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/BenoitClaveau/qwebs-aws-api-gateway#readme",
   "dependencies": {
-    "qwebs": "^0.1.97"
+    "qwebs": "^0.1.100"
   },
   "devDependencies": {
     "jasmine": "^2.6.0"

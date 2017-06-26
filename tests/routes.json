@@ -1,0 +1,8 @@
+{
+    "services": [
+        { "name": "$service", "location": "./mocks/service"}
+    ],
+    "locators": [
+        { "get": "/dummy/:id", "service": "$service", "method": "dummy" }
+    ]
+}
