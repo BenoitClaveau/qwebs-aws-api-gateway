@@ -6,5 +6,6 @@
 
 'use strict';
 
-module.exports = require('./lib/qwebs');
+module.exports = require('./lib/aws-qwebs');
+module.exports.Qwebs = require('./lib/qwebs-aws');
 module.exports.Response = require('./lib/qwebs/services/aws-response');

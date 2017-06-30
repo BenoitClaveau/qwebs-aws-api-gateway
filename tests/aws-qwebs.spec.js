@@ -5,7 +5,7 @@
  */
 "use strict";
 
-const Qwebs = require('../lib/qwebs');
+const Qwebs = require('../lib/aws-qwebs');
 const service = require('./mocks/service');
 
 describe("router", () => {
