@@ -6,6 +6,6 @@
 
 'use strict';
 
-module.exports = require('./lib/aws-qwebs');
-module.exports.Qwebs = require('./lib/qwebs-aws');
-module.exports.Response = require('./lib/qwebs/services/aws-response');
+module.exports = require('./lib/aws-qwebs');                //use in aws api gateway
+module.exports.Server = require('./lib/qwebs');         //use locally to create a Qwebs server locally and call your lambda method
+module.exports.Response = require('./lib/services/aws-response');
