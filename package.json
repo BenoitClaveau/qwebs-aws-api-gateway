@@ -20,6 +20,8 @@
     "qwebs": "^0.1.103"
   },
   "devDependencies": {
-    "jasmine": "^2.6.0"
+    "jasmine": "^2.6.0",
+    "qwebs-http": "^0.1.96",
+    "qwebs-https": "^0.1.96"
   }
 }
