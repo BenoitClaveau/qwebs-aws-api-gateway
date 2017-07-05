@@ -1,3 +1,6 @@
 {
-    "routes": "./routes.json"
+    "routes": "./routes.json",
+    "http": {
+        "port": 3000
+    }
 }
