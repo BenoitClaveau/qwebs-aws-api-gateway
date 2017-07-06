@@ -28,20 +28,8 @@ module.exports.handler = (event, context, callback) => {
 };
 ```
 
-```config.json
-{
-    "routes": "./routes.json"
-}
-```
-
-```routes.json
-{
-    "services": [
-        { "name": "$info", "location": "../services/info"}
-    ],
-    "locators": [
-        { "get": "/info", "service": "$info", "method": "getInfo" }
-    ]
-}
-```
+## Others AWS Services
+  
+  * [$aws-s3](https://www.npmjs.com/package/qwebs-aws-s3)
+  * [$aws-ses](https://www.npmjs.com/package/qwebs-aws-ses)
 
