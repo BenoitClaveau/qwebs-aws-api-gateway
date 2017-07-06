@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/BenoitClaveau/qwebs-aws-api-gateway#readme",
   "dependencies": {
-    "qwebs": "^0.2.4"
+    "qwebs": "latest",
+    "aws-sdk": "lastest",
+    "mustache": "lastest"
   },
   "devDependencies": {
     "jasmine": "latest",

@@ -5,12 +5,18 @@ Qwebs routing for AWS API Gateway
 'use strict';
 
 let service = require("./service");
+const options = {
+    dirname: path.resolve(__dirname, ".."),
+    config: { 
+        routes: "./routes.json"
+    }
+};
 
-const promise = require('qwebs-aws-api-gateway').Create({ dirname: __dirname, config: "./config.json" });
+let QwebsFactory = require('qwebs-aws-api-gateway').Create(options);
 
 module.exports.handler = (event, context, callback) => {
     console.log("[EVENT]", event);
-    promise.then(qwebs => {
+    QwebsFactory.then(qwebs => {
         qwebs.invoke(event, context, callback).then(() => {
         console.log("[SUCCESS]");
     }).catch(error => {
@@ -38,3 +44,4 @@ module.exports.handler = (event, context, callback) => {
     ]
 }
 ```
+
