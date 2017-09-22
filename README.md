@@ -15,12 +15,12 @@ const options = {
 let QwebsFactory = require('qwebs-aws-api-gateway').Create(options);
 
 module.exports.handler = (event, context, callback) => {
-    console.log("[EVENT]", event);
+    //console.log("[EVENT]", event);
     QwebsFactory.then(qwebs => {
         qwebs.invoke(event, context, callback).then(() => {
-        console.log("[SUCCESS]");
+        //console.log("[SUCCESS]");
     }).catch(error => {
-        console.log("[ERROR]", error);
+        //console.log("[ERROR]", error);
         callback(null, {
             statusCode: error.statusCode || 404
         })
