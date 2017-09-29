@@ -1,31 +1,28 @@
 # qwebs-aws-api-gateway
+
 Qwebs routing for AWS API Gateway
 
 ```js
-'use strict';
+const path = require("path");
+const QwebsAwsApiGateway = require('qwebs-aws-api-gateway');
+let qwebs = null;
 
-let service = require("./service");
-const options = {
+new QwebsAwsApiGateway({
     dirname: path.resolve(__dirname, ".."),
     config: { 
         routes: "./routes.json"
     }
-};
-
-let QwebsFactory = require('qwebs-aws-api-gateway').Create(options);
+}).load().then(instance => {
+    qwebs = instance;
+})
 
 module.exports.handler = (event, context, callback) => {
-    //console.log("[EVENT]", event);
-    QwebsFactory.then(qwebs => {
-        qwebs.invoke(event, context, callback).then(() => {
-        //console.log("[SUCCESS]");
-    }).catch(error => {
-        //console.log("[ERROR]", error);
-        callback(null, {
-            statusCode: error.statusCode || 404
-        })
+    if (!qwebs) return callback(null, { statusCode: 503 });
+    qwebs.invoke(event, context, callback).catch(error => {
+        callback(null, { statusCode: error.statusCode || 404 })
     })
 };
+
 ```
 
 ## Others AWS Services

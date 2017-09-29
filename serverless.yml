@@ -1,4 +1,4 @@
-service: ada-proxy-2
+service: api
 
 package:
   exclude:
