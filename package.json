@@ -1,6 +1,6 @@
 {
   "name": "qwebs-aws-api-gateway",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Qwebs routing for AWS API Gateway",
   "main": "index.js",
   "scripts": {
