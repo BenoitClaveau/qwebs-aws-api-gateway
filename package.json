@@ -4,7 +4,7 @@
   "description": "Qwebs routing for AWS API Gateway",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha tests"
+    "test": "node node_modules/jasmine/bin/jasmine.js tests"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "qwebs": "latest"
   },
   "devDependencies": {
-    "mocha": "latest",
+    "jasmine": "latest",
     "qwebs-http": "latest"
   }
 }
