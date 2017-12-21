@@ -1,6 +1,6 @@
 {
   "name": "qwebs-aws-api-gateway",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Qwebs routing for AWS API Gateway",
   "main": "index.js",
   "scripts": {
@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/BenoitClaveau/qwebs-aws-api-gateway#readme",
   "dependencies": {
-    "qwebs": "^0.0.0"
+    "qwebs": "latest"
   },
   "devDependencies": {
     "mocha": "latest",
-    "qwebs-http": "^0.0.0"
+    "qwebs-http": "latest"
   }
 }
